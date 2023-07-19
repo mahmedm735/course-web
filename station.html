@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head><title>new station</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta name="description" /><meta name="author" /><link href="../Content/bootstrap.rtl.css" rel="stylesheet" /><link href="../Content/MyStyle.css" rel="stylesheet" /><link href="../Content/all.css" rel="stylesheet" /><link href="../Content/jquery-ui.css" rel="stylesheet" /><link href="../Content/MyStyle.css" rel="stylesheet" />
+    <script src="../Scripts/jquery-3.6.4.js"></script>
+    <script src="../Scripts/jquery-ui.js"></script>
+    <script src="../Scripts/MyScript.js"></script>
+
+    <script src="../Scripts/bootstrap.bundle.js"></script>
+
+    <link rel="stylesheet" href= "station.css"/>
+</head>
+<body dir="rtl">
+
+
+
+
+        <div class="container-fluid" style="background-color: #093f25;">
+            <div class="row p-1">
+                <div class="col-1"></div>
+                <div class="col-2">
+                    <h5 class="float-end text-white">برنامج عقود المحطات</h5>
+                </div>
+
+                <div class="col-8">
+                    <span id="lblDate" class=" text-white float-end">الخميس /  20 يوليو  / 2023</span>
+                </div>
+            </div>
+        </div>
+
+        <span id="Label1">General</span>
+
+        <nav class="navbar navbar-expand-lg navbar-light ForHeader">
+            <div class="container-fluid">
+                <a class="navbar-brand mx-5" href="#">
+                    <img src="3.png" alt="logo" />
+                </a>
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="home.html"><i class="fa-solid  text-success mx-2 fa-house"></i>الرئيسية</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-gas-pump mx-2 text-success"></i>المحطات
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="station.html"><i class="fa-solid fa-circle-plus   mx-2"></i>اضافة  محطة</a> </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="Updates.aspx"><i class="fa-solid fa-file-pen mx-2 iconss"></i>تعديل  محطة</a></li>
+
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-shop mx-2 text-success"></i>انشطة خدمية
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="./NewExActivity.aspx"><i class="fa-solid fa-circle-plus iconss mx-2"></i>اضافة نشاط</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="./UpdateExActivity.aspx"><i class="fa-solid fa-file-pen iconss mx-2"></i>تعديل نشاط</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="search.html"><i class="fa-solid fa-magnifying-glass-plus text-success mx-2"></i>
+                                <h6 class="d-inline mx-2 ">البحث</h6>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Check.aspx"><i class="fa-solid text-success fa-list-check"></i>
+                                <h6 class="d-inline mx-1">مراجعة</h6>
+                            </a>
+                        </li>
+
+
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-shop mx-2 text-success"></i>التقارير
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="./Reports.aspx"><i class="fa-solid fa-hashtag mx-2"></i>احصائيات رقمية</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="./DetsReprts.aspx"><i class="fa-solid fa-file-pen iconss mx-2"></i>تقارير تفصيلية</a></li>
+
+                            </ul>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="change.html"><i class="fa-solid text-success fa-unlock mx-2"></i>
+                                <h6 class="d-inline mx-1">تغيير كلمة المرور</h6>
+                            </a>
+                        </li>
+
+
+                        <li class="nav-item">
+
+                            <input type="submit" name="ctl00$btnExit" value="خروج" id="btnExit" class="btn btn-danger my-2" />
+
+                        </li>
+
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+
+    <section class="sectiondfpg">
+        <div class="container-fluid hero">
+            <h5 class="text-center p-2 text-white">
+                <i class="fa-solid fa-circle-plus mx-2"></i>اضافة بيانات محطة
+            </h5>
+        </div>
+    </section>
+
+
+    <section class="sectiondfpg">
+        <div class="container-fluid bg-success">
+            <div class="row">
+                <div class="col-md-1 text-center ">
+                    <i class="fa-solid fa-2x fa-fire-flame-simple mt-1 text-white"></i>
+                </div>
+                <div class="txt">
+                    <h4 class="text-white p-1">البيانات </h4> 
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid p-2"style="background-image:url('3.jpg');">
+            <div class="row gx-3 ">
+                <div class="col-md-auto col-sm-12">
+                  <div id='d1'>
+                    <p>
+                         المحافظة &nbsp
+                    <select name="ctl00$ContentPlaceHolder1$drpCity" id="ContentPlaceHolder1_drpCity" class="DropList">
+	<option value="0">المحافظات</option>
+	<option value="1">القاهرة</option>
+	<option value="2">الجيزة</option>
+	<option value="3">الأسكندرية</option>
+	<option value="4">الدقهلية</option>
+	<option value="5">الشرقية</option>
+	<option value="6">المنوفية</option>
+	<option value="7">القليوبية</option>
+	<option value="8">البحيرة</option>
+	<option value="9">الغربية</option>
+	<option value="10">بور سعيد</option>
+	<option value="11">دمياط</option>
+	<option value="12">الإسماعلية</option>
+	<option value="13">السويس</option>
+	<option value="14">كفر الشيخ</option>
+	<option value="15">الفيوم</option>
+	<option value="16">بني سويف</option>
+	<option value="17">مطروح</option>
+	<option value="18">شمال سيناء</option>
+	<option value="19">جنوب سيناء</option>
+	<option value="20">المنيا</option>
+	<option value="21">أسيوط</option>
+	<option value="22">سوهاج</option>
+	<option value="23">قنا</option>
+	<option value="24">البحر الأحمر</option>
+	<option value="25">الأقصر</option>
+	<option value="26">أسوان</option>
+	<option value="27">الواحات</option>
+	<option value="28">الوادي الجديد</option>
+
+</select>
+                    
+              
+                        اسم المحطة&nbsp
+                  <input name="ctl00$ContentPlaceHolder1$txtSTname" type="text" id="ContentPlaceHolder1_txtSTname" class="Text-Style mx-3" />
+                    
+                      
+                        العنوان&nbsp
+                  <input name="ctl00$ContentPlaceHolder1$txtSTname" type="text" id="ContentPlaceHolder1_txtSTname" class="Text-Style mx-3" />
+                  
+            
+                        &nbsp تاريخ المعاينة
+             <input name="no" type="text" id="ContentPlaceHolder1_txtSpace" style="width: 15%;" class="Text-Style mx-4" />
+                    </p>
+                </div>
+
+        
+                    <p>
+                        &nbsp  الجهة الأساسية
+                 <input name="ctl00$ContentPlaceHolder1$txtStCord" type="text" id="ContentPlaceHolder1_txtStCord" class="Text-Style mx-3" />
+                   
+                        &nbsp الجهة اليمنى
+                 <input name="ctl00$ContentPlaceHolder1$txtStCord" type="text" id="ContentPlaceHolder1_txtStCord" class="Text-Style mx-3" />
+                   
+                        &nbsp  الجهة اليسرى
+                 <input name="ctl00$ContentPlaceHolder1$txtStCord" type="text" id="ContentPlaceHolder1_txtStCord" class="Text-Style mx-3" />
+                   
+                        &nbsp  الجهة الخلفية
+                 <input name="ctl00$ContentPlaceHolder1$txtStCord" type="text" id="ContentPlaceHolder1_txtStCord" class="Text-Style mx-3" />
+                    </p>
+       
+                
+
+                    <p>
+                        &nbsp الطريق 
+                   <input name="ctl00$ContentPlaceHolder1$txtChargPoints" type="text" style="width: 30%;" id="ContentPlaceHolder1_txtChargPoints" class="Text-Style" />
+                    </p>
+                   <p> 
+                    &nbsp الخدمات 
+                    <input type="checkbox" id="myCheckbox" name="myCheckbox" value="checked">
+                    <label for="myCheckbox"> زيوت و شحوم</label><input type="checkbox" id="checkbox1" name="checkbox1" value="checked">
+                    <label for="checkbox1">زوايا و إتزان</label>
+                    
+                    <input type="checkbox" id="checkbox2" name="checkbox2" value="checked">
+                    <label for="checkbox2">ميكانيكا</label>
+                    
+                    <input type="checkbox" id="checkbox3" name="checkbox3" value="checked">
+                    <label for="checkbox3">كهرباء</label>
+                    <input type="checkbox" id="checkbox3" name="checkbox3" value="checked">
+                    <label for="checkbox3">غسيل</label><input type="checkbox" id="checkbox3" name="checkbox3" value="checked">
+                    <label for="checkbox3">مطلع سماوي</label><input type="checkbox" id="checkbox3" name="checkbox3" value="checked">
+                    <label for="checkbox3">ماركت</label></p>
+   
+    </div>
+
+
+                   
+   <hr>
+   
+   
+                      
+                         <div>
+                        <p>
+                            &nbsp ملكية المحطة
+                       <span class="mx-1"><input id="ContentPlaceHolder1_CarGas" type="radio" name="ctl00$ContentPlaceHolder1$Pro" value="CarGas" onclick="javascript:setTimeout(__doPostBack(ctl00$ContentPlaceHolder1$CarGas)& 0)" /><label for="ContentPlaceHolder1_CarGas">شركة  </label></span>
+                       <input name="ctl00$ContentPlaceHolder1$txtWorkingDate" type="text" id="ContentPlaceHolder1_txtWorkingDate" class="Text-Style mx-2" />
+                            <span class="mx-1"><input id="ContentPlaceHolder1_Others" type="radio" name="ctl00$ContentPlaceHolder1$Pro" value="Others" onclick="javascript:setTimeout(__doPostBack(ctl00$ContentPlaceHolder1$Others)& 0)" /><label for="ContentPlaceHolder1_Others">وكيل</label></span>
+                            <input name="ctl00$ContentPlaceHolder1$txtWorkingDate" type="text" id="ContentPlaceHolder1_txtWorkingDate" class="Text-Style mx-2" />
+                           
+                              &nbsp تاريخ التشغيل 
+                           <input name="ctl00$ContentPlaceHolder1$txtWorkingDate" type="text" id="ContentPlaceHolder1_txtWorkingDate" class="Text-Style mx-2" />
+                           
+                            &nbsp  الأحــداثيـات
+                     <input name="ctl00$ContentPlaceHolder1$txtStCord" type="text" id="ContentPlaceHolder1_txtStCord" class="Text-Style mx-3" />
+                      
+                            
+<hr>
+
+                        </p>
+
+                   
+
+
+                    </div>
+
+        
+
+                    <p>
+                       موقف سيارات &nbsp 
+                     <input name="ctl00$ContentPlaceHolder1$txtCompress" type="text" id="ContentPlaceHolder1_txtCompress" class="Text-Style" />
+                    
+                      محطات وقود &nbsp 
+                    <input name="ctl00$ContentPlaceHolder1$txtCompress" type="text" id="ContentPlaceHolder1_txtCompress" class="Text-Style" />
+                  
+                        محطات غاز &nbsp
+                   <input name="ctl00$ContentPlaceHolder1$txtChargPump" type="text" id="ContentPlaceHolder1_txtChargPump" class="Text-Style" />
+                    </p>
+                    <p>
+                      الوقود السائل &nbsp &nbsp &nbsp
+                <select name="ctl00$ContentPlaceHolder1$drpCompress" id="ContentPlaceHolder1_drpCompress" class="DropList">
+<option value="0">النوع </option>
+<option value="1">80</option>
+<option value="2">90</option>
+<option value="2">سولار</option>
+<option value="2">95</option>
+
+</select>
+                  </p>
+                    <hr>
+                    <p>
+                       غاز طبيعي&nbsp
+                      <label>
+                        <input type="radio" name="gender" value="male">
+                        متوافر
+                      </label>
+                      
+                      <label>
+                        <input type="radio" name="gender" value="female">
+                        غير متوافر
+                      </label>
+                    </p>
+
+
+                    <p>
+                  
+                      المساحة &nbsp
+                     <label>
+                       <input type="radio" name="gender" value="male">
+                       متوافرة
+                     </label>
+                     
+                     <label>
+                       <input type="radio" name="gender" value="female">
+                       غير متوافرة
+                     </label>
+                    </p>
+                    <hr>
+                    <p>
+                     
+                     وصف المساحة &nbsp
+                     <input name="ctl00$ContentPlaceHolder1$txtChargPump" type="text" id="ContentPlaceHolder1_txtChargPump" class="Text-Style" />
+                      
+                   </p>
+
+
+                  
+            </div>
+
+
+
+
+</form>
+
+</body>
+</html>
